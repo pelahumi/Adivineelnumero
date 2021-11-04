@@ -15,14 +15,14 @@ while intento > numero:
     total_intentos = total_intentos + 1
     intento = int(input("Introduce un número: "))
     if intento == numero:
-        print("Enhorabuena has acertado")
+            print("Enhorabuena has acertado")
 
-while intento < numero:
-    print("Demasiado pequeño")
-    total_intentos = total_intentos + 1
-    intento = int(input("Introduce un número: "))
-    if intento == numero:
-        print("Enhorabuena has acertado")
+    while intento < numero:
+        print("Demasiado pequeño")
         total_intentos = total_intentos + 1
+        intento = int(input("Introduce un número: "))
+        if intento == numero:
+            print("Enhorabuena has acertado")
+            total_intentos = total_intentos + 1
 
-print(total_intentos)
+print("Has utilizado: " + str(total_intentos) + " intentos")
