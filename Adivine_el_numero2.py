@@ -3,8 +3,8 @@ numero = random.randint(0,100)
 MIN = 0
 MAX = 99
 
-def pedir_numero(invitacion):
-    invitacion += " entre " + str(MIN) + " y " + str(MAX) + ":"
+def pedir_numero(invitacion, minimo=MIN, maximo=MAX):
+    invitacion += " entre " + str(minimo) + " y " + str(maximo) + ":"
 
     while True:
         entrada = input(invitacion)
@@ -13,22 +13,25 @@ def pedir_numero(invitacion):
         except:
             pass
         else:
-            if MIN <= entrada <= MAX:
+            if minimo <= entrada <= maximo:
                 break
     return entrada
 
 
 
-numero = pedir_numero("Introduzca el número a adivinar")
+numero = pedir_numero("Introduzca el número a adivinar", MIN, MAX)
 
-print("Intente encontrar el numero a adivinar: ")
+MIN = minimo
+MAX = maximo
 
 while True:
-    intento = pedir_numero("Adivine el número")
+    intento = pedir_numero("Adivine el número", minimo, maximo)
     if intento < numero:
         print("Demasiado pequeño")
+        minimo = intento + 1
     elif intento > numero:
         print("Demasiado grande")
+        maximo = intento - 1
     else:
         print("Victoria")
         break
