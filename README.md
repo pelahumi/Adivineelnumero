@@ -9,7 +9,7 @@ El diagrama de flujo de este ejercicio es el siguiente:
 
 ![diagrama de flujo adivine el número](/pelahumi/Adivineelnumero/Diagrama.jpg)
 
-``import random
+```import random
 numero = random.randint(0,99)
 intento = int(input("Introduce un número: "))
 total_intentos = 0
