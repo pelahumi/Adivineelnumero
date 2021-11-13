@@ -9,3 +9,4 @@ El diagrama de flujo de este ejercicio es el siguiente:
 
 ![diagrama de flujo adivine el número]
 (/Users/pela/Documents/Universidad/Programación/calentamiento/Adivineelnumero)
+
