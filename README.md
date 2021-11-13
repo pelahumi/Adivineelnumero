@@ -7,7 +7,7 @@ Hemos resuelto un juego de adivinar un número del 0 al 99.
 
 El diagrama de flujo de este ejercicio es el siguiente:
 
-![diagrama de flujo adivine el número](https://github.com/pelahumi/Adivineelnumero/Diagrama.jpg)
+![diagrama de flujo adivine el número](https://github.com/pelahumi/Adivineelnumero/blob/main/Diagrama.jpg)
 
 ```import random
 numero = random.randint(0,99)
