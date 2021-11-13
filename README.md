@@ -31,5 +31,5 @@ while intento != numero:
         print("Enhorabuena has acertado")
         total_intentos = total_intentos + 1
 
-print("Has utilizado: " + str(total_intentos) + " intentos")
+print("Has utilizado: " + str(total_intentos) + " intentos")```
 
